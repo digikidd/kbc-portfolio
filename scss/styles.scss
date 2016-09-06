@@ -1,0 +1,287 @@
+@import 'colors';
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  height: 5300px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: block;
+  background-color: rgba(15, 69, 109, 0.97);
+  height: 5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  padding-bottom: 58px;
+  .kbc-logo {
+    margin-top: 12px;
+    width: 100px;
+  }
+}
+
+.nav {
+  margin: 10px;
+}
+
+.introduction {
+  background-color: rgba(15, 69, 109, 0.86);
+  text-align: center;
+  height: 1000px;
+  margin-top: 59px;
+  margin-bottom: -20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro-text {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 6em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: $txtcolor;
+}
+
+.kbcHeading {
+  margin-top: 10px;
+  font-family: 'Oxygen', sans-serif;
+  color: $bkgndcolorlight;
+  p {
+    font-size: 28px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $bkgndcolorlight;
+  }
+}
+
+.kbcHeading2 {
+  margin-top: 20px;
+  font-family: 'Oxygen', sans-serif;
+  color: $bkgndcolorlight;
+  strong {
+    font-family: 'Oxygen', sans-serif;
+    color: $txtcolor;
+  }
+}
+
+.aboutMe {
+  font-family: 'Oxygen', sans-serif;
+  height: 1800px;
+  margin-bottom: -20px;
+  background-color: #0f6d37;
+  h1 {
+    height: 600px;
+    background-image: url("../images/kbc-fam-selfie.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    padding-top: 128px;
+    text-align: center;
+    font-size: 68px;
+    color: $txtcolor;
+  }
+  h4 {
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    color: $txtcolor;
+  }
+  h5 {
+    text-align: center;
+    font-size: 20px;
+    color: $txtcolor;
+  }
+  strong {
+    color: $bkgndcolorlight;
+  }
+  p {
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: $bkgndcolorlight;
+    padding-left: 100px;
+    text-align: left;
+  }
+  .arrow {
+    height:60px;
+    width: 100px;
+    margin-left: 820px;
+    margin-top: -900px;
+  }
+}
+
+.skills {
+  height: 984px;
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #15619a;
+  color: $txtcolor;
+}
+h1 {
+  font-size: 46px;
+}
+h4 {
+  padding-top: 25px;
+  padding-left: 100px;
+  padding-bottom: 24px;
+  font-size: 32px;
+  color: $txtcolor;
+}
+h5 {
+  text-align: center;
+  font-size: 20px;
+  color: $txtcolor;
+}
+strong {
+  color: $bkgndcolorlight;
+}
+p{
+  text-align: center;
+  font-size: 44px;
+}
+
+.firstSet {
+  padding-left: 300px;
+}
+
+.secondSet {
+  padding-right: 300px;
+}
+
+.skill-list {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.hrSkill {
+  margin: auto;
+  width:90%;
+  border : 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.portfolio {
+  height: 1500px;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+.contact {
+  margin:0 auto;
+  width:100%;
+  height: 1000px;
+  background-color: #30404c;
+}
+
+.contactMe {
+  margin: 0 auto;
+  padding-top: 12em;
+  width: 100%;
+  h1 {
+    text-align: center;
+    margin: 0 auto;
+    width:70%;
+    color: $txtcolor;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 62px;
+  }
+  strong {
+    color: #0f6d37;
+  }
+  .icons {
+    margin: auto;
+    width: 85px;
+  }
+}
+
+li.navAbout a:hover {
+  color: #0f6d37 !important;
+}
+
+li.navSkills a:hover {
+  color: #15619a !important;
+}
+
+li.navPortfolio a:hover {
+  color: mediumseagreen !important;
+}
+
+li.navContact a:hover {
+  color: #061a2a !important;
+}
+
+.logo, .navAbout, .navSkills, .navPortfolio, .navContact, .navLinks {
+  cursor: pointer;
+}
+
+.cabo {
+  display: block;
+  margin: 0 auto;
+  height: 10%;
+  border-radius: 15px 50px;
+}
+
+hr.faded {
+  height: 2px;
+  border: 0;
+  width:25%;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+img:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+}
+
+.contactIcons {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  padding: 18px;
+}
+
+.contactkbc:hover {
+  cursor: pointer;
+}
+
+.skill-row {
+  margin: 100px auto;
+  width: 60%;
+}
+
+.skill {
+  width: 50%;
+  font-size: 30px;
+.skill-names {
+  text-align: left;
+}
+  .skill-stars {
+    text-align: left;
+  }
+img {
+  width: 12%;
+  margin: 0 6px;
+}
+}
+
+.social-icons {
+  margin:0 auto;
+}
+
+.contactkbc {
+  margin: 0 auto;
+  width:50%;
+}
