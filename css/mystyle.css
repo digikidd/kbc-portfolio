@@ -3,7 +3,7 @@ body {
   overflow-x: hidden; }
 
 .main {
-  height: 5300px;
+  height: 6300px;
   margin: 0 auto; }
 
 .navbar {
@@ -237,3 +237,20 @@ img:hover {
 .contactkbc {
   margin: 0 auto;
   width: 50%; }
+
+.submitProject {
+  height: 900px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #15619a;
+  color: #e2f0fb; }
+
+.projectInfo {
+  border: 1px solid #CB2027;
+  margin: 60px auto;
+  width: 50%; }
+
+input {
+  color: #000; }
+
+label {
+  padding: 6px; }
