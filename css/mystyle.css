@@ -24,8 +24,6 @@ body {
   background-color: rgba(15, 69, 109, 0.86);
   text-align: center;
   height: 1000px;
-  margin-top: 59px;
-  margin-bottom: -20px;
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -123,12 +121,6 @@ p {
   text-align: center;
   font-size: 44px; }
 
-.firstSet {
-  padding-left: 300px; }
-
-.secondSet {
-  padding-right: 300px; }
-
 .skill-list {
   padding-top: 20px;
   font-size: 20px; }
@@ -185,7 +177,7 @@ li.navPortfolio a:hover {
 li.navContact a:hover {
   color: #061a2a !important; }
 
-.logo, .navAbout, .navSkills, .navPortfolio, .navContact, .navLinks {
+.logo, .navAbout, .navSkills, .navPortfolio, .navContact, .navLinks, .navLogin {
   cursor: pointer; }
 
 .cabo {
@@ -239,18 +231,17 @@ img:hover {
   width: 50%; }
 
 .submitProject {
+  border: 1px solid #CB2027;
   height: 900px;
+  margin: 0 auto;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #15619a;
   color: #e2f0fb; }
-
-.projectInfo {
-  border: 1px solid #CB2027;
-  margin: 60px auto;
-  width: 50%; }
-
-input {
-  color: #000; }
-
-label {
-  padding: 6px; }
+  .submitProject .projectInfo {
+    border: 1px solid #CB2027;
+    margin: 0 auto;
+    width: 50%; }
+    .submitProject .projectInfo input {
+      color: #000; }
+    .submitProject .projectInfo label {
+      padding: 6px; }

@@ -5,7 +5,7 @@ class Introduction extends React.Component {
     render() {
 
         return (
-            <div className="introduction">
+            <div className="introduction col-lg-12 col-md-12 col-xs-12">
 
                 <Element name="intro">
                     {this.state}

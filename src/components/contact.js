@@ -22,7 +22,7 @@ class Contact extends React.Component {
                         <div className="row contactkbc">
                             {this.icons.map ((item, index)=> {
                                 return (
-                                    <div className="social-icons col-md-2 col-xs-2"><a key={index} href={item.LINK}> <img className="contactIcons socialmedia icons" key={index} src={item.ICON}></img></a></div>)
+                                    <div key={index} className="social-icons col-md-2 col-xs-2"><a href={item.LINK}> <img className="contactIcons socialmedia icons" key={index} src={item.ICON}></img></a></div>)
                             })}
                         </div>
                     </div>
