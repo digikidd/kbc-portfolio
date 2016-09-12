@@ -282,16 +282,15 @@ img:hover {
 }
 
 .submitProject {
-  border: 1px solid #CB2027;
   height: 900px;
-  margin: 0 auto;
+  margin:auto;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #15619a;
   color: $txtcolor;
   .projectInfo {
     border: 1px solid #CB2027;
     margin: 0 auto;
-    width: 50%;
+    width: 35%;
     input {
       color: #000;
     }

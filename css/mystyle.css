@@ -231,16 +231,15 @@ img:hover {
   width: 50%; }
 
 .submitProject {
-  border: 1px solid #CB2027;
   height: 900px;
-  margin: 0 auto;
+  margin: auto;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #15619a;
   color: #e2f0fb; }
   .submitProject .projectInfo {
     border: 1px solid #CB2027;
     margin: 0 auto;
-    width: 50%; }
+    width: 35%; }
     .submitProject .projectInfo input {
       color: #000; }
     .submitProject .projectInfo label {
