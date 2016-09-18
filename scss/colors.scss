@@ -3,6 +3,16 @@ $bkgndcolorlight: #061928;
 $txtcolor: #e2f0fb;
 $footercolor: #18232E;
 
+$mq-breakpoints: (
+        iphone  : 320px,
+        iphone6 : 375px,
+        iphone6p: 414px,
+        small   : 480px,
+        medium  : 640px,
+        ipad    : 768px,
+        large   : 1024px,
+);
+
 @mixin kbcHeadingResize {
   @include mq(iphone) {
     font-size: 16px;

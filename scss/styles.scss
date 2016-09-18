@@ -10,10 +10,19 @@ body {
   margin: 0;
 }
 
+.navbar-toggle {
+  margin-top: 55px;
+}
+
+.navbar-collapse {
+ margin-top: -1px;
+}
+
 .navbar {
   position: fixed;
   top:0;
-  background-color: rgba(15, 69, 109, 0.97);
+  z-index: 100;
+  background-color: rgba(15, 69, 109, 1);
   height: 120px;
   line-height: 120px;
   -webkit-transition: height .5s, line-height .5s;
@@ -24,6 +33,7 @@ body {
     margin-right: 24px;
     -webkit-transition: all .5s;
     transition: all .5s;
+
   }
   .kbc-logo {
     display: inline-block;
@@ -35,18 +45,38 @@ body {
   }
 }
 
-.navbar-collapse {
-  @include mq(iphone) {
-    margin-top: -51px;
-    background-color: rgba(15, 69, 109, 0.97);
+.scrolled-nav {
+  margin-top: 0px;
+  height: 40px !important;
+  line-height: 46px !important;
+  .kbc-logo {
+    margin-top: 2px;
+    height: 30px;
   }
-  @include mq(iphone) {
-    margin-top: -300px;
+  ul {
+    margin-top: 0px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
-  @include mq(large) {
-    margin-top: -300px;
+  .navbar-collapse {
+    margin-top: -1px;
+  }
+  .navbar-toggle {
+    margin-top: 8px;
   }
 }
+
+.navbar-collapse {
+  background-color: rgba(15, 69, 109, 1);
+  @include mq(iphone) {
+    margin-top: -1px;
+  }
+  @include mq(large) {
+    margin-top: -1px;
+  }
+}
+
+
 
 .introduction {
   background-color: rgba(15, 69, 109, 0.86);
@@ -317,17 +347,3 @@ img:hover {
   padding: 10px;
 }
 
-.scrolled-nav {
-  height: 40px !important;
-  line-height: 40px !important;
-  margin-top: 12px;
-  .kbc-logo {
-    margin-top: 2px;
-    height: 30px;
-  }
-  ul {
-    margin-top: 0px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-}

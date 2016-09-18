@@ -6,10 +6,17 @@ body {
   height: 6300px;
   margin: 0; }
 
+.navbar-toggle {
+  margin-top: 55px; }
+
+.navbar-collapse {
+  margin-top: -1px; }
+
 .navbar {
   position: fixed;
   top: 0;
-  background-color: rgba(15, 69, 109, 0.97);
+  z-index: 100;
+  background-color: #0f456d;
   height: 120px;
   line-height: 120px;
   -webkit-transition: height .5s, line-height .5s;
@@ -31,18 +38,30 @@ body {
     -webkit-transition: all .6s;
     transition: all .6s; }
 
-@media only screen and (min-width: 320px) {
-  .navbar-collapse {
-    margin-top: -51px;
-    background-color: rgba(15, 69, 109, 0.97); } }
+.scrolled-nav {
+  margin-top: 0px;
+  height: 40px !important;
+  line-height: 46px !important; }
+  .scrolled-nav .kbc-logo {
+    margin-top: 2px;
+    height: 30px; }
+  .scrolled-nav ul {
+    margin-top: 0px;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+  .scrolled-nav .navbar-collapse {
+    margin-top: -1px; }
+  .scrolled-nav .navbar-toggle {
+    margin-top: 8px; }
 
-@media only screen and (min-width: 320px) {
-  .navbar-collapse {
-    margin-top: -300px; } }
-
-@media only screen and (min-width: 1024px) {
-  .navbar-collapse {
-    margin-top: -300px; } }
+.navbar-collapse {
+  background-color: #0f456d; }
+  @media only screen and (min-width: 320px) {
+    .navbar-collapse {
+      margin-top: -1px; } }
+  @media only screen and (min-width: 1024px) {
+    .navbar-collapse {
+      margin-top: -1px; } }
 
 .introduction {
   background-color: rgba(15, 69, 109, 0.86);
@@ -341,15 +360,3 @@ img:hover {
 .portfolioItem {
   background-color: #0275B6;
   padding: 10px; }
-
-.scrolled-nav {
-  height: 40px !important;
-  line-height: 40px !important;
-  margin-top: 12px; }
-  .scrolled-nav .kbc-logo {
-    margin-top: 2px;
-    height: 30px; }
-  .scrolled-nav ul {
-    margin-top: 0px;
-    -webkit-transition: all .5s;
-    transition: all .5s; }
