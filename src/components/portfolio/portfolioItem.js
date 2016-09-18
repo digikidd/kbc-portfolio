@@ -1,24 +1,26 @@
 import React from "react";
-import FormSubmit from "../formsubmit";
-
 
 class PortfolioItem extends React.Component{
 
     render () {
-        var DefaultTitle = "kbc-project";
+        var portfolio = this.props.portfolio;
+        var DefaultTitle = "kbc-ninja project";
+        var DefaultDescription = "Hong Kong Fooey";
+        var DeafaultTechnologies = "Foobar";
+        var DefaultGitHub = "https://github.com/digikidd";
+        var DefaultWebAdress = "www.kbccode.com";
+
+
         return (
-        <div className="portfolioItems col-lg-12 col-md-12 col-xs-12">
-            <h3>{this.props.title ? this.props.title : DefaultTitle}</h3>
-            <p>This project was an intro to javascript basics.</p>
-            {/*<FormSubmit/>*/}
+        <div className="portfolioItem col-xs-12 col-sm-4 col-lg-3">
+            <h2>{portfolio.name ? portfolio.name : DefaultTitle}</h2>
+            <h2>{portfolio.description ? portfolio.description : DefaultDescription}</h2>
+            <h2>{portfolio.technologies ? portfolio.technologies : DeafaultTechnologies}</h2>
+            <h2>{portfolio.github ? portfolio.github : DefaultGitHub}</h2>
+            <h2>{portfolio.webAddress ? portfolio.webAddress : DefaultWebAdress}</h2>
         </div>
         )
     }
 }
 
 export default PortfolioItem;
-
-// Create a component with a form to upload using the portfolio api.
-//think about the structure of how to save the projects to mongo?
-//
-//

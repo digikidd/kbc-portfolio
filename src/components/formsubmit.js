@@ -3,26 +3,28 @@
  */
 import React from "react";
 import {Element} from "react-scroll";
+import {connect} from "react-redux";
+import {savePortfolio} from "../actions/index";
 
 class FormSubmit extends React.Component {
     kbcProjects = {};
-    OnButtonClick (e,) {
+    OnButtonClick (e) {
         e.preventDefault ();
         this.kbcProjects.name = this.refs.name.value;
         this.kbcProjects.description = this.refs.description.value;
         this.kbcProjects.github = this.refs.github.value;
         this.kbcProjects.technologies = this.refs.technologies.value;
         this.kbcProjects.webAddress = this.refs.webAddress.value;
-        console.log (this.kbcProjects);
+        this.props.savePortfolio(this.kbcProjects);
+
     }
 
     render () {
-
+        this.props.result ? console.log("response") : console.log("waiting");
         return (
             <div className="submitProject col-lg-12 col-md-12 col-xs-12">
                 <Element name="submitProject">
-                        <div className="projectInfo col-lg-12 col-md-12 col-xs-12">
-                            <form onSubmit={this.OnButtonClick.bind (this)}>
+                            <form className="projectInfo" onSubmit={this.OnButtonClick.bind(this)}>
                                 <div className="form-group">
                                     <label htmlFor="projectname">Project: </label>
                                     <input type="text" className="form-control" ref="name"
@@ -50,11 +52,10 @@ class FormSubmit extends React.Component {
                                 </div>
                                 <button type="submit" className="btn btn-default">Submit Project</button>
                             </form>
-                        </div>
                 </Element>
             </div>
         )
     }
 }
 
-export default FormSubmit;
+export default connect( null, {savePortfolio})(FormSubmit);

@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import reducerPortfolio from './reducerPortfolio';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  portfolio: reducerPortfolio
 });
 
 export default rootReducer;
