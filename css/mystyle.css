@@ -10,7 +10,14 @@ body {
   margin-top: 55px; }
 
 .navbar-collapse {
+  background-color: #0f456d;
   margin-top: -1px; }
+  @media only screen and (min-width: 320px) {
+    .navbar-collapse {
+      margin-top: -1px; } }
+  @media only screen and (min-width: 1024px) {
+    .navbar-collapse {
+      margin-top: -1px; } }
 
 .navbar {
   position: fixed;
@@ -38,37 +45,43 @@ body {
     -webkit-transition: all .6s;
     transition: all .6s; }
 
+@media only screen and (min-width: 320px) {
+  .navbar-nav {
+    margin-top: 4px !important; } }
+
+@media only screen and (min-width: 768px) {
+  .navbar-nav {
+    -webkit-transition: all 0.5s;
+    margin-top: 4px !important; } }
+
+@media only screen and (min-width: 640px) {
+  .navbar-nav {
+    margin-top: 4px !important; } }
+
+@media only screen and (min-width: 1024px) {
+  .navbar-nav {
+    margin-top: 4px !important; } }
+
 .scrolled-nav {
-  margin-top: 0px;
+  margin-top: 0;
   height: 40px !important;
   line-height: 46px !important; }
   .scrolled-nav .kbc-logo {
     margin-top: 2px;
     height: 30px; }
   .scrolled-nav ul {
-    margin-top: 0px;
     -webkit-transition: all .5s;
     transition: all .5s; }
   .scrolled-nav .navbar-collapse {
-    margin-top: -1px; }
+    margin-top: -1px;
+    width: 100%; }
   .scrolled-nav .navbar-toggle {
     margin-top: 8px; }
-
-.navbar-collapse {
-  background-color: #0f456d; }
-  @media only screen and (min-width: 320px) {
-    .navbar-collapse {
-      margin-top: -1px; } }
-  @media only screen and (min-width: 1024px) {
-    .navbar-collapse {
-      margin-top: -1px; } }
 
 .introduction {
   background-color: rgba(15, 69, 109, 0.86);
   text-align: center;
-  height: 1000px;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  height: 1000px; }
 
 .intro-text {
   box-sizing: border-box;
@@ -137,68 +150,96 @@ body {
       font-size: 28px; } }
 
 .aboutMe {
-  border: 1px solid #CB2027;
   font-family: 'Oxygen', sans-serif;
-  height: 1800px;
+  height: 1700px;
+  margin-top: -10px;
   margin-bottom: -20px;
   background-color: #0f6d37; }
   .aboutMe .masthead {
     height: 600px;
     width: 100%;
     background-size: cover;
-    background-image: url("../images/kbc-fam-selfie-1024.png"); }
+    background: url("../images/kbc-fam-selfie-1024.png"); }
     @media only screen and (min-width: 320px) {
       .aboutMe .masthead {
+        margin-top: -14px;
+        height: 200px;
         background-image: url("../images/kbc-fam-selfie-350.png");
         background-size: 100%;
         background-repeat: no-repeat; } }
     @media only screen and (min-width: 480px) {
       .aboutMe .masthead {
+        height: 260px;
         background-image: url("../images/kbc-fam-selfie-375.png");
         background-size: 100%;
         background-repeat: no-repeat; } }
     @media only screen and (min-width: 640px) {
       .aboutMe .masthead {
+        height: 350px;
         background-image: url("../images/kbc-fam-selfie-640.png");
         background-size: 100%;
         background-repeat: no-repeat; } }
     @media only screen and (min-width: 768px) {
       .aboutMe .masthead {
+        height: 450px;
         background-image: url("../images/kbc-fam-selfie-768.png");
         font-size: 68px;
         background-size: 100%;
         background-repeat: no-repeat; } }
     @media only screen and (min-width: 1024px) {
       .aboutMe .masthead {
+        height: 575px;
+        background-image: url("../images/kbc-fam-selfie-1024.png");
+        background-size: cover;
+        margin: 0;
+        background-repeat: no-repeat; } }
+    @media only screen and (min-width: 1200px) {
+      .aboutMe .masthead {
+        height: 575px;
         background-image: url("../images/kbc-fam-selfie-1024.png");
         background-size: cover;
         margin: 0;
         background-repeat: no-repeat; } }
   .aboutMe h4 {
-    padding-top: 25px;
+    padding-top: 12px;
     padding-left: 100px;
     padding-bottom: 24px;
     font-size: 32px;
     color: #e2f0fb; }
     @media only screen and (min-width: 320px) {
       .aboutMe h4 {
-        font-size: 9px; } }
+        font-size: 14px; } }
     @media only screen and (min-width: 480px) {
       .aboutMe h4 {
-        font-size: 18px; } }
+        font-size: 16px; } }
     @media only screen and (min-width: 640px) {
       .aboutMe h4 {
-        font-size: 26px; } }
+        font-size: 18px; } }
     @media only screen and (min-width: 768px) {
       .aboutMe h4 {
-        font-size: 30px; } }
+        font-size: 20px; } }
     @media only screen and (min-width: 1024px) {
       .aboutMe h4 {
-        font-size: 32px; } }
+        font-size: 24px; } }
   .aboutMe h5 {
     text-align: center;
     font-size: 20px;
     color: #e2f0fb; }
+    @media only screen and (min-width: 320px) {
+      .aboutMe h5 {
+        font-size: 14px; } }
+    @media only screen and (min-width: 480px) {
+      .aboutMe h5 {
+        font-size: 16px; } }
+    @media only screen and (min-width: 640px) {
+      .aboutMe h5 {
+        font-size: 18px; } }
+    @media only screen and (min-width: 768px) {
+      .aboutMe h5 {
+        font-size: 20px; } }
+    @media only screen and (min-width: 1024px) {
+      .aboutMe h5 {
+        font-size: 24px; } }
   .aboutMe strong {
     color: #061928; }
   .aboutMe p {
@@ -206,40 +247,99 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     color: #061928;
     padding-left: 100px;
+    padding-right: 50px;
     text-align: left; }
+    @media only screen and (min-width: 320px) {
+      .aboutMe p {
+        font-size: 14px; } }
+    @media only screen and (min-width: 480px) {
+      .aboutMe p {
+        font-size: 16px; } }
+    @media only screen and (min-width: 640px) {
+      .aboutMe p {
+        font-size: 18px; } }
+    @media only screen and (min-width: 768px) {
+      .aboutMe p {
+        font-size: 20px; } }
+    @media only screen and (min-width: 1024px) {
+      .aboutMe p {
+        font-size: 24px; } }
+  .aboutMe .cabo {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 15px 50px;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    padding: 18px; }
+    @media only screen and (min-width: 375px) {
+      .aboutMe .cabo {
+        height: 100px; } }
+    @media only screen and (min-width: 480px) {
+      .aboutMe .cabo {
+        height: 125px; } }
+    @media only screen and (min-width: 640px) {
+      .aboutMe .cabo {
+        height: 150px; } }
+    @media only screen and (min-width: 1024px) {
+      .aboutMe .cabo {
+        height: 200px; } }
+  .aboutMe .cabo:hover {
+    -webkit-filter: grayscale(0%); }
+
+.skill-row {
+  margin: 100px auto;
+  width: 100%; }
 
 .skills {
   height: 984px;
   margin: auto;
+  width: 100%;
+  padding-top: 24px;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #15619a;
   color: #e2f0fb; }
-
-h1 {
-  font-size: 46px; }
-
-h4 {
-  padding-top: 25px;
-  padding-left: 100px;
-  padding-bottom: 24px;
-  font-size: 32px;
-  color: #e2f0fb; }
-
-h5 {
-  text-align: center;
-  font-size: 20px;
-  color: #e2f0fb; }
+  .skills .skill {
+    width: 50%; }
+    .skills .skill .skill-names {
+      float: left;
+      padding-left: 140px; }
+      @media only screen and (min-width: 375px) {
+        .skills .skill .skill-names {
+          font-size: 12px;
+          padding-left: 10px; } }
+      @media only screen and (min-width: 768px) {
+        .skills .skill .skill-names {
+          font-size: 20px; } }
+      @media only screen and (min-width: 1024px) {
+        .skills .skill .skill-names {
+          font-size: 26px;
+          padding-left: 140px; } }
+    .skills .skill .skill-stars {
+      float: right;
+      margin-top: -20px;
+      margin-right: 40px;
+      text-align: right; }
+    .skills .skill img {
+      width: 22px;
+      margin: 0 4px; }
+      @media only screen and (min-width: 375px) {
+        .skills .skill img {
+          width: 12px; } }
+      @media only screen and (min-width: 768px) {
+        .skills .skill img {
+          width: 15px; } }
+      @media only screen and (min-width: 1024px) {
+        .skills .skill img {
+          width: 22px; } }
 
 strong {
   color: #061928; }
 
 p {
-  text-align: center;
   font-size: 44px; }
-
-.skill-list {
-  padding-top: 20px;
-  font-size: 20px; }
 
 .hrSkill {
   margin: auto;
@@ -293,49 +393,21 @@ li.navContact a:hover {
 .logo, .navAbout, .navSkills, .navPortfolio, .navContact, .navLinks, .navLogin {
   cursor: pointer; }
 
-.cabo {
-  display: block;
-  margin: 0 auto;
-  height: 10%;
-  border-radius: 15px 50px;
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  padding: 18px; }
-
 hr.faded {
   height: 2px;
   border: 0;
   width: 25%;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
 
-img:hover {
+.contactIcons {
+  -webkit-filter: grayscale(100%); }
+
+.contactIcons:hover {
+  cursor: pointer;
   -webkit-filter: grayscale(0%);
   -webkit-transition: .5s ease-in-out;
   -moz-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out; }
-
-.contactkbc:hover {
-  cursor: pointer; }
-
-.skill-row {
-  margin: 100px auto;
-  width: 60%; }
-
-.skill {
-  width: 50%;
-  font-size: 30px; }
-  .skill .skill-names {
-    text-align: left; }
-  .skill .skill-stars {
-    text-align: left; }
-  .skill img {
-    width: 12%;
-    margin: 0 6px; }
-
-.social-icons {
-  margin: 0 auto; }
 
 .contactkbc {
   margin: 0 auto;

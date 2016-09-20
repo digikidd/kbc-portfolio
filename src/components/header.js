@@ -7,16 +7,16 @@ class Header extends React.Component {
         window.addEventListener ('scroll', this.navScroll);
     };
 
-    navScroll (e) {
+    navScroll () {
         var scrollTop = 0;
         $ (window).scroll (function () {
             scrollTop = $ (window).scrollTop ();
-
             if (scrollTop >= 100) {
                 $ ('.navbar').addClass ('scrolled-nav');
             }
             else if (scrollTop < 100) {
                 $ ('.navbar').removeClass ('scrolled-nav');
+
             }
         });
     };
@@ -26,10 +26,10 @@ class Header extends React.Component {
 
             <div className="container">
                     <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                        <div className="navbar-header" classID="a" onScroll={this.navScroll}>
+                        <div className="navbar-header" classID="a">
                             <button type="button" className="navbar-toggle" data-toggle="collapse"
                                     data-target=".navbar-collapse">
-                                {/*<span className="sr-only">Toggle navigation</span>*/}
+                                <span className="sr-only">Toggle navigation</span>
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
@@ -41,21 +41,21 @@ class Header extends React.Component {
                         <div className="navbar-collapse collapse">
                             <ul className="nav navbar-nav navbar-right">
                                 <li className="navAbout">
-                                    <Link to="about" spy={true} smooth={true} offset={-60} duration={500}>about</Link>
+                                    <Link to="about" spy={true} smooth={true} offset={-54} duration={500}>about</Link>
                                 </li>
                                 <li className="navSkills">
-                                    <Link to="skills" spy={true} smooth={true} offset={-59} duration={500}>skills</Link>
+                                    <Link to="skills" spy={true} smooth={true} offset={-72} duration={500}>skills</Link>
                                 </li>
                                 <li className="navPortfolio">
-                                    <Link to="portfolio" spy={true} smooth={true} offset={-80}
+                                    <Link to="portfolio" spy={true} smooth={true} offset={-50}
                                           duration={500}>portfolio</Link>
                                 </li>
                                 <li className="navContact">
-                                    <Link to="contact" spy={true} smooth={true} offset={-59}
+                                    <Link to="contact" spy={true} smooth={true} offset={-50}
                                           duration={500}>contact</Link>
                                 </li>
                                 <li className="navLogin">
-                                    <Link to="submitProject" spy={true} smooth={true} offset={-59}
+                                    <Link to="submitProject" spy={true} smooth={true} offset={-50}
                                           duration={500}>login</Link>
                                 </li>
                             </ul>
